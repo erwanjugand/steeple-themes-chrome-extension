@@ -1,0 +1,15 @@
+html[data-steeple-theme-extension="dark"] {
+  --color-background: #151819 !important;
+  --color-black-value: 255 255 255 !important;
+  --color-white-value: 40 40 40 !important;
+  --color-grey-scale-10: #e8e8e8 !important;
+  --color-grey-scale-9: #d0d1d1 !important;
+  --color-grey-scale-8: #b8babb !important;
+  --color-grey-scale-7: #9fa3a6 !important;
+  --color-grey-scale-6: #868d90 !important;
+  --color-grey-scale-5: #6e767a !important;
+  --color-grey-scale-4: #575f63 !important;
+  --color-grey-scale-3: #40474b !important;
+  --color-grey-scale-2: #2b3032 !important;
+  --color-grey-scale-1: #151819 !important;
+}

@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Thèmes de Steeple"
+  },
+  "extensionDescription": {
+    "message": "Changez facilement le thème de Steeple !"
+  },
+  "footerText": {
+    "message": "Compatible avec Steeple 2.13 et supérieure"
+  },
+  "actionDefault": {
+    "message": "Par défaut"
+  },
+  "actionDark": {
+    "message": "Sombre"
+  },
+  "actionSepia": {
+    "message": "Sépia"
+  }
+}
