@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module":"ESNext",
+    "target":"ES6",
+    "strict": true,
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "types": [
+      "node",
+      "@types/chrome"
+    ]
+  }
+}
