@@ -6,7 +6,7 @@ specifiers:
   npm-build-zip: ^1.0.3
   postcss: ^8.4.21
   sass: ^1.58.0
-  stylelint: ^14.0.0
+  stylelint: ^14.16.1
   stylelint-config-standard-scss: ^6.1.0
   typescript: ^4.9.5
   vite: ^4.1.1
