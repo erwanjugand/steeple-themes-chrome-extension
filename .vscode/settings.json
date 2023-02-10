@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "stylelint.validate": ["scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+      "files.trimTrailingWhitespace": false
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  }
+}
