@@ -4,13 +4,15 @@
 	"author": "Erwan Jugand <erwan.jugand@gmail.com>",
 	"scripts": {
 		"dev": "vite build --watch",
-		"build": "vite build",
+		"build": "vite build && pnpm zip",
+		"zip": "mkdir -p zip && npm-build-zip --source=dist --destination=zip",
 		"stylelint": "stylelint **/*.scss --quiet",
 		"stylelint:fix": "pnpm stylelint --fix"
 	},
 	"devDependencies": {
 		"@types/chrome": "^0.0.212",
 		"@types/node": "^18.13.0",
+		"npm-build-zip": "^1.0.3",
 		"postcss": "^8.4.21",
 		"sass": "^1.58.0",
 		"stylelint": "^14.0.0",
