@@ -1,26 +1,26 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/chrome': 0.0.224
-  '@types/node': 18.15.5
+  '@types/chrome': 0.0.225
+  '@types/node': 18.15.7
   npm-build-zip: 1.0.3
   postcss: 8.4.21
-  sass: 1.59.3
+  sass: 1.60.0
   stylelint: 15.3.0
   stylelint-config-standard-scss: 7.0.1
   typescript: 5.0.2
   vite: 4.2.1
 
 devDependencies:
-  '@types/chrome': 0.0.224
-  '@types/node': 18.15.5
+  '@types/chrome': 0.0.225
+  '@types/node': 18.15.7
   npm-build-zip: 1.0.3
   postcss: 8.4.21
-  sass: 1.59.3
+  sass: 1.60.0
   stylelint: 15.3.0
   stylelint-config-standard-scss: 7.0.1_xd434hbhlikjpobg3rgppuzh3e
   typescript: 5.0.2
-  vite: 4.2.1_y7rghahg7ddu72pko63vhsxa44
+  vite: 4.2.1_nxfqjvl5td6azux3owba63veg4
 
 packages:
 
@@ -300,8 +300,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@types/chrome/0.0.224:
-    resolution: {integrity: sha512-YkL7q3KDV7OAKgVCBNIfH73rnjNMbIzAYHzTa2DKhSK/2z0Wf/n8yJnK/UoW+lvuYJJR4LtAkG3YvsIZTy7BOA==}
+  /@types/chrome/0.0.225:
+    resolution: {integrity: sha512-acSFQN7X0/fjF6PSP0Ki9TlwWsEeJeh5WclMYilJSHHp+ayLDMD/YeSIUzsodwLKPZQ9h8SyiL13/pPab8M4RA==}
     dependencies:
       '@types/filesystem': 0.0.32
       '@types/har-format': 1.2.10
@@ -325,8 +325,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.15.5:
-    resolution: {integrity: sha512-Ark2WDjjZO7GmvsyFFf81MXuGTA/d6oP38anyxWOL6EREyBKAxKoFHwBhaZxCfLRLpO8JgVXwqOwSwa7jRcjew==}
+  /@types/node/18.15.7:
+    resolution: {integrity: sha512-LFmUbFunqmBn26wJZgZPYZPrDR1RwGOu2v79Mgcka1ndO6V0/cwjivPTc4yoK6n9kmw4/ls1r8cLrvh2iMibFA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1499,8 +1499,8 @@ packages:
       truncate-utf8-bytes: 1.0.2
     dev: true
 
-  /sass/1.59.3:
-    resolution: {integrity: sha512-QCq98N3hX1jfTCoUAsF3eyGuXLsY7BCnCEg9qAact94Yc21npG2/mVOqoDvE0fCbWDqiM4WlcJQla0gWG2YlxQ==}
+  /sass/1.60.0:
+    resolution: {integrity: sha512-updbwW6fNb5gGm8qMXzVO7V4sWf7LMXnMly/JEyfbfERbVH46Fn6q02BX7/eHTdKpE7d+oTkMMQpFWNUMfFbgQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -1855,7 +1855,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/4.2.1_y7rghahg7ddu72pko63vhsxa44:
+  /vite/4.2.1_nxfqjvl5td6azux3owba63veg4:
     resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1880,12 +1880,12 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.7
       esbuild: 0.17.12
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.20.0
-      sass: 1.59.3
+      sass: 1.60.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
