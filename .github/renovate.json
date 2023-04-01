@@ -5,7 +5,7 @@
   ],
   "timezone": "Europe/Paris",
   "schedule": [
-    "every 4 weeks on Saturday after 4am and before 8am"
+    "every 4 weeks on Saturday after 2am and before 10am"
   ],
   "packageRules": [
     {
