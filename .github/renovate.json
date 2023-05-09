@@ -1,26 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
-  ],
-  "timezone": "Europe/Paris",
-  "schedule": [
-    "every 4 weeks on Saturday after 2am and before 10am"
-  ],
-  "packageRules": [
-    {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "extends": [
-        ":semanticCommitTypeAll(chore)"
-      ]
-    }
+    "github>erwanjugand/renovate-config:slow"
   ]
 }
