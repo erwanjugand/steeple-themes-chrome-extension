@@ -6,12 +6,16 @@ const setTheme = (theme: string) => {
 
 chrome.storage.local.get(['steeple-theme']).then(result => {
   const value: string | undefined = result['steeple-theme']
-  if (!value) { return }
+  if (!value) {
+    return
+  }
   setTheme(value)
 })
 
 chrome.storage.onChanged.addListener(changes => {
   const newValue: string | undefined = changes['steeple-theme'].newValue
-  if (!newValue) { return }
+  if (!newValue) {
+    return
+  }
   setTheme(newValue)
-});
+})

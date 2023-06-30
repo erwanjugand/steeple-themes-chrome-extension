@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   await chrome.storage.local.get(['steeple-theme']).then(result => {
     const value = result['steeple-theme']
     const activeAction = document.querySelector(`.main-action[data-theme="${value}"]`)
-    if (!activeAction) { return }
+    if (!activeAction) {
+      return
+    }
     activeAction.classList.add('active')
   })
 

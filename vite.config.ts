@@ -6,13 +6,13 @@ export default defineConfig({
       input: {
         popup: 'src/popup.html',
         contentScript: 'src/contentScript.ts',
-        themes: 'src/themes.scss'
+        themes: 'src/themes.scss',
       },
       output: {
         assetFileNames: 'assets/[name].[ext]',
         chunkFileNames: 'assets/[name].js',
-        entryFileNames: 'assets/[name].js'
-      }
-    }
-  }
+        entryFileNames: 'assets/[name].js',
+      },
+    },
+  },
 })

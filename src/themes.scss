@@ -1,54 +1,54 @@
 $themes: (
-  "light": (
-    "background": null,
-    "black-value": null,
-    "white-value": null,
-    "grey-scale-10": null,
-    "grey-scale-9": null,
-    "grey-scale-8": null,
-    "grey-scale-7": null,
-    "grey-scale-6": null,
-    "grey-scale-5": null,
-    "grey-scale-4": null,
-    "grey-scale-3": null,
-    "grey-scale-2": null,
-    "grey-scale-1": null,
+  'light': (
+    'background': null,
+    'black-value': null,
+    'white-value': null,
+    'grey-scale-10': null,
+    'grey-scale-9': null,
+    'grey-scale-8': null,
+    'grey-scale-7': null,
+    'grey-scale-6': null,
+    'grey-scale-5': null,
+    'grey-scale-4': null,
+    'grey-scale-3': null,
+    'grey-scale-2': null,
+    'grey-scale-1': null,
   ),
-  "dark": (
-    "background": #151819,
-    "black-value": 255 255 255,
-    "white-value": 40 40 40,
-    "grey-scale-10": #e8e8e8,
-    "grey-scale-9": #d0d1d1,
-    "grey-scale-8": #b8babb,
-    "grey-scale-7": #9fa3a6,
-    "grey-scale-6": #868d90,
-    "grey-scale-5": #6e767a,
-    "grey-scale-4": #575f63,
-    "grey-scale-3": #40474b,
-    "grey-scale-2": #2b3032,
-    "grey-scale-1": #151819
+  'dark': (
+    'background': #151819,
+    'black-value': 255 255 255,
+    'white-value': 40 40 40,
+    'grey-scale-10': #e8e8e8,
+    'grey-scale-9': #d0d1d1,
+    'grey-scale-8': #b8babb,
+    'grey-scale-7': #9fa3a6,
+    'grey-scale-6': #868d90,
+    'grey-scale-5': #6e767a,
+    'grey-scale-4': #575f63,
+    'grey-scale-3': #40474b,
+    'grey-scale-2': #2b3032,
+    'grey-scale-1': #151819,
   ),
-  "sepia": (
-    "background": #f3ebd8,
-    "white-value": 250 245 235,
-    "black-value": 0 0 0,
-    "grey-scale-1": #e8e8e8,
-    "grey-scale-2": #d1d0d0,
-    "grey-scale-3": #bbb9b8,
-    "grey-scale-4": #a6a19f,
-    "grey-scale-5": #928984,
-    "grey-scale-6": #7e706a,
-    "grey-scale-7": #675952,
-    "grey-scale-8": #50423b,
-    "grey-scale-9": #372b26,
-    "grey-scale-10": #1d1512
-  )
+  'sepia': (
+    'background': #f3ebd8,
+    'white-value': 250 245 235,
+    'black-value': 0 0 0,
+    'grey-scale-1': #e8e8e8,
+    'grey-scale-2': #d1d0d0,
+    'grey-scale-3': #bbb9b8,
+    'grey-scale-4': #a6a19f,
+    'grey-scale-5': #928984,
+    'grey-scale-6': #7e706a,
+    'grey-scale-7': #675952,
+    'grey-scale-8': #50423b,
+    'grey-scale-9': #372b26,
+    'grey-scale-10': #1d1512,
+  ),
 );
 
 html {
   @each $theme, $colors in $themes {
-    &[data-steeple-theme-extension="#{$theme}"] {
+    &[data-steeple-theme-extension='#{$theme}'] {
       @each $color, $value in $colors {
         @if $value {
           --color-#{$color}: #{$value};

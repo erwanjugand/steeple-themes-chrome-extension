@@ -15,22 +15,12 @@
     "default_title": "__MSG_extensionName__",
     "default_popup": "src/popup.html"
   },
-  "permissions": [
-    "storage",
-    "tabs"
-  ],
+  "permissions": ["storage", "tabs"],
   "content_scripts": [
     {
-      "js": [
-        "assets/contentScript.js"
-      ],
-      "css": [
-        "assets/themes.css"
-      ],
-      "matches": [
-        "https://www.steeple.fr/*",
-        "https://tv.steeple.fr/*"
-      ]
+      "js": ["assets/contentScript.js"],
+      "css": ["assets/themes.css"],
+      "matches": ["https://www.steeple.fr/*", "https://tv.steeple.fr/*"]
     }
   ]
 }
