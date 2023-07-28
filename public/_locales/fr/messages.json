@@ -1,12 +1,12 @@
 {
   "extensionName": {
-    "message": "Thèmes de Steeple"
+    "message": "Thèmes pour Steeple"
   },
   "extensionDescription": {
     "message": "Changez facilement le thème de Steeple !"
   },
   "footerText": {
-    "message": "Compatible avec Steeple 2.14"
+    "message": "Version :"
   },
   "actionDefault": {
     "message": "Par défaut"

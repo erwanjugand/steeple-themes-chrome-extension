@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Erwan Jugand",
   "icons": {
     "16": "icons/16.png",
@@ -20,7 +20,12 @@
     {
       "js": ["assets/contentScript.js"],
       "css": ["assets/themes.css"],
-      "matches": ["https://www.steeple.fr/*", "https://tv.steeple.fr/*"]
+      "matches": [
+        "https://www.steeple.fr/*",
+        "https://app.steeple.com/*",
+        "https://tv.steeple.fr/*",
+        "https://tv.steeple.com/*"
+      ]
     }
   ]
 }
