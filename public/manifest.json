@@ -20,7 +20,12 @@
     {
       "js": ["assets/contentScript.js"],
       "css": ["assets/themes.css"],
-      "matches": ["https://www.steeple.fr/*", "https://tv.steeple.fr/*"]
+      "matches": [
+        "https://www.steeple.fr/*",
+        "https://app.steeple.com/*",
+        "https://tv.steeple.fr/*",
+        "https://tv.steeple.com/*"
+      ]
     }
   ]
 }
