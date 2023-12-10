@@ -2,6 +2,7 @@
   "name": "steeple-themes-chrome-extension",
   "version": "0.3.0",
   "author": "Erwan Jugand <erwan.jugand@gmail.com>",
+  "type": "module",
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build && pnpm zip",
