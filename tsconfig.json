@@ -8,6 +8,6 @@
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "noEmit": true,
-    "types": ["node", "@types/chrome"],
-  },
+    "types": ["node", "@types/chrome"]
+  }
 }
