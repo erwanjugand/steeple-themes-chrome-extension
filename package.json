@@ -17,17 +17,17 @@
     "fix:all": "pnpm fix:prettier && pnpm fix:eslint && pnpm fix:stylelint"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.262",
-    "@types/node": "20.11.24",
-    "@typescript-eslint/eslint-plugin": "7.1.0",
+    "@types/chrome": "0.0.263",
+    "@types/node": "20.12.2",
+    "@typescript-eslint/eslint-plugin": "7.4.0",
     "eslint": "8.57.0",
     "npm-build-zip": "1.0.4",
-    "postcss": "8.4.35",
+    "postcss": "8.4.38",
     "prettier": "3.2.5",
-    "sass": "1.71.1",
-    "stylelint": "16.2.1",
+    "sass": "1.72.0",
+    "stylelint": "16.3.1",
     "stylelint-config-standard-scss": "13.0.0",
-    "typescript": "5.3.3",
-    "vite": "5.1.4"
+    "typescript": "5.4.3",
+    "vite": "5.2.7"
   }
 }
