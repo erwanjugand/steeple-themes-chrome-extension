@@ -8,10 +8,10 @@
     "build": "vite build && pnpm zip",
     "zip": "mkdir -p zip && npm-build-zip --source=dist --destination=zip",
     "check:prettier": "prettier --check .",
-    "check:eslint": "eslint --ext .ts,.js .",
+    "check:eslint": "eslint .",
     "check:stylelint": "stylelint **/*.{scss,vue}",
     "check:all": "pnpm check:prettier && pnpm check:eslint && pnpm check:stylelint",
-    "fix:prettier": "prettier --loglevel warn --write .",
+    "fix:prettier": "prettier --log-level warn --write .",
     "fix:eslint": "pnpm check:eslint --fix",
     "fix:stylelint": "pnpm check:stylelint --fix",
     "fix:all": "pnpm fix:prettier && pnpm fix:eslint && pnpm fix:stylelint"
@@ -19,8 +19,8 @@
   "devDependencies": {
     "@types/chrome": "0.0.263",
     "@types/node": "20.12.2",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
     "eslint": "9.1.1",
+    "eslint-config-prettier": "9.1.0",
     "npm-build-zip": "1.0.4",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
@@ -28,6 +28,7 @@
     "stylelint": "16.3.1",
     "stylelint-config-standard-scss": "13.0.0",
     "typescript": "5.4.3",
+    "typescript-eslint": "7.7.1",
     "vite": "5.2.7"
   }
 }
