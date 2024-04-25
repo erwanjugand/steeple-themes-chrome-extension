@@ -20,7 +20,7 @@
     "@types/chrome": "0.0.263",
     "@types/node": "20.12.2",
     "@typescript-eslint/eslint-plugin": "7.4.0",
-    "eslint": "8.57.0",
+    "eslint": "9.1.1",
     "npm-build-zip": "1.0.4",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
