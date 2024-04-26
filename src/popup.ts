@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Set version
   const footerVersion = document.querySelector<HTMLElement>('.footer-version')
-  const { version } = await chrome.runtime.getManifest()
   if (footerVersion) {
+    const { version } = chrome.runtime.getManifest()
     footerVersion.innerText = version
   }
 
   // Get current theme
-  await chrome.storage.local.get(['steeple-theme']).then(result => {
+  await chrome.storage.local.get(['steeple-theme']).then((result: steepleThemeStorage) => {
     const value = result['steeple-theme']
     const activeAction = document.querySelector(`.main-action[data-theme="${value}"]`)
     if (!activeAction) {
@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     action.addEventListener('click', async () => {
       const theme = action.dataset.theme
       await chrome.storage.local.set({ 'steeple-theme': theme }).then(() => {
-        actions.forEach(action => action.classList.remove('active'))
+        actions.forEach(action => {
+          action.classList.remove('active')
+        })
         action.classList.add('active')
       })
     })

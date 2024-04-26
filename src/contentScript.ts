@@ -4,7 +4,7 @@ const setTheme = (theme: string) => {
   document.documentElement.dataset.steepleThemeExtension = theme
 }
 
-chrome.storage.local.get(['steeple-theme']).then(result => {
+chrome.storage.local.get(['steeple-theme']).then((result: steepleThemeStorage) => {
   const value: string | undefined = result['steeple-theme']
   if (!value) {
     return
