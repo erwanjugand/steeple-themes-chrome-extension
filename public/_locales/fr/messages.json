@@ -16,5 +16,8 @@
   },
   "actionSepia": {
     "message": "Sépia"
+  },
+  "actionKlaxoon": {
+    "message": "Klaxoon"
   }
 }
