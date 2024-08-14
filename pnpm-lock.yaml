@@ -11,9 +11,6 @@ importers:
       '@types/chrome':
         specifier: 0.0.268
         version: 0.0.268
-      '@types/node':
-        specifier: 20.14.11
-        version: 20.14.11
       eslint:
         specifier: 9.7.0
         version: 9.7.0
@@ -1650,6 +1647,7 @@ snapshots:
   '@types/node@20.14.11':
     dependencies:
       undici-types: 5.26.5
+    optional: true
 
   '@typescript-eslint/eslint-plugin@8.0.1(@typescript-eslint/parser@8.0.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)':
     dependencies:
@@ -2689,7 +2687,8 @@ snapshots:
 
   typescript@5.5.3: {}
 
-  undici-types@5.26.5: {}
+  undici-types@5.26.5:
+    optional: true
 
   uri-js@4.4.1:
     dependencies:
