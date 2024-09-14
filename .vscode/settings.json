@@ -1,4 +1,4 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.experimental.useFlatConfig": true
+  "eslint.useFlatConfig": true
 }
