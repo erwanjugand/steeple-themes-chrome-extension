@@ -1,7 +1,9 @@
+import { getTheme, isTheme, setTheme } from './themes'
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Translate popup
-  const ElementToTranslate = document.querySelectorAll<HTMLElement>('[data-i18n]')
-  ElementToTranslate.forEach(element => {
+  const elementToTranslate = document.querySelectorAll<HTMLElement>('[data-i18n]')
+  elementToTranslate.forEach(element => {
     element.innerText = chrome.i18n.getMessage(element.dataset.i18n || '')
   })
 
@@ -13,12 +15,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // Get current theme
-  await chrome.storage.local.get(['steeple-theme']).then((result: steepleThemeStorage) => {
-    const value = result['steeple-theme']
-    const activeAction = document.querySelector(`.main-action[data-theme="${value}"]`)
-    if (!activeAction) {
-      return
-    }
+
+  await getTheme.then(theme => {
+    const activeAction = document.querySelector(`.main-action[data-theme="${theme}"]`)
+    if (!activeAction) return
     activeAction.classList.add('active')
   })
 
@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   actions.forEach(action => {
     action.addEventListener('click', async () => {
       const theme = action.dataset.theme
-      await chrome.storage.local.set({ 'steeple-theme': theme }).then(() => {
-        actions.forEach(action => {
-          action.classList.remove('active')
-        })
-        action.classList.add('active')
+      if (!isTheme(theme)) return
+      await setTheme(theme)
+
+      actions.forEach(action => {
+        action.classList.remove('active')
       })
+      action.classList.add('active')
     })
   })
 })

@@ -1,18 +1,16 @@
 import { defineConfig } from 'vite'
+import webExtension from 'vite-plugin-web-extension'
 
-export default defineConfig({
-  build: {
-    rollupOptions: {
-      input: {
-        popup: 'src/popup.html',
-        contentScript: 'src/contentScript.ts',
-        themes: 'src/themes.scss',
-      },
-      output: {
-        assetFileNames: 'assets/[name].[ext]',
-        chunkFileNames: 'assets/[name].js',
-        entryFileNames: 'assets/[name].js',
-      },
-    },
-  },
+import { defineManifest } from './src/manifest'
+
+export default defineConfig(() => {
+  return {
+    plugins: [
+      webExtension({
+        manifest: () => defineManifest(),
+        watchFilePaths: ['src/manifest.ts'],
+        disableAutoLaunch: true,
+      }),
+    ],
+  }
 })
