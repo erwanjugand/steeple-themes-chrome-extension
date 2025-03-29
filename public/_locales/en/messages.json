@@ -8,13 +8,13 @@
   "footerText": {
     "message": "Version:"
   },
-  "actionDefault": {
+  "defaultAction": {
     "message": "Default"
   },
-  "actionDark": {
+  "darkAction": {
     "message": "Dark"
   },
-  "actionSepia": {
+  "sepiaAction": {
     "message": "Sepia"
   }
 }
