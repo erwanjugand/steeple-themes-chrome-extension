@@ -45,8 +45,8 @@ importers:
         specifier: 8.31.0
         version: 8.31.0(eslint@9.25.1)(typescript@5.8.3)
       vite:
-        specifier: 6.3.3
-        version: 6.3.3(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1)
+        specifier: 6.3.4
+        version: 6.3.4(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1)
       vite-plugin-web-extension:
         specifier: 4.4.3
         version: 4.4.3(@types/node@22.15.2)(sass@1.87.0)
@@ -2159,8 +2159,8 @@ packages:
     resolution: {integrity: sha512-xOQR4o5bfxnZDlVxDYoK/aZO9Tt92CItaGybrKC41rl218Of5fsLDQDYR95rQd2wg8DnT8R9CEheQ++lmP+Euw==}
     engines: {node: '>=16'}
 
-  vite@6.3.3:
-    resolution: {integrity: sha512-5nXH+QsELbFKhsEfWLkHrvgRpTdGJzqOZ+utSdmPTvwHmvU6ITTm3xx+mRusihkcI8GeC7lCDyn3kDtiki9scw==}
+  vite@6.3.4:
+    resolution: {integrity: sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -4343,7 +4343,7 @@ snapshots:
       lodash.uniq: 4.5.0
       lodash.uniqby: 4.7.0
       md5: 2.3.0
-      vite: 6.3.3(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1)
+      vite: 6.3.4(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1)
       web-ext-option-types: 8.3.1
       web-ext-run: 0.2.2
       webextension-polyfill: 0.10.0
@@ -4363,7 +4363,7 @@ snapshots:
       - tsx
       - utf-8-validate
 
-  vite@6.3.3(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1):
+  vite@6.3.4(@types/node@22.15.2)(sass@1.87.0)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
