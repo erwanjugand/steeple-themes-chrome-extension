@@ -1,74 +1,46 @@
 @use 'sass:color';
 
-$steeple-color-names: ('primary', 'shark', 'orange', 'pink', 'success', 'error', 'warning');
+$steeple-color-names: ('primary', 'slate', 'orange', 'pink', 'green', 'red', 'yellow');
 $themes: (
-  'light': (
-    'background-value': null,
-    'black-value': null,
-    'white-value': null,
-    'grey-scale-10': null,
-    'grey-scale-9': null,
-    'grey-scale-8': null,
-    'grey-scale-7': null,
-    'grey-scale-6': null,
-    'grey-scale-5': null,
-    'grey-scale-4': null,
-    'grey-scale-3': null,
-    'grey-scale-2': null,
-    'grey-scale-1': null,
-  ),
   'dark': (
-    'background-value': 21 24 25,
+    'background-value': 46 48 50,
     'black-value': 255 255 255,
     'white-value': 40 40 40,
-    'grey-scale-10': #e8e8e8,
-    'grey-scale-9': #d0d1d1,
-    'grey-scale-8': #b8babb,
-    'grey-scale-7': #9fa3a6,
-    'grey-scale-6': #868d90,
-    'grey-scale-5': #6e767a,
-    'grey-scale-4': #575f63,
-    'grey-scale-3': #40474b,
-    'grey-scale-2': #2b3032,
-    'grey-scale-1': #151819,
   ),
   'sepia': (
-    'background-value': 243 235 216,
+    'background-value': 235 232 225,
     'white-value': 250 245 235,
     'black-value': 0 0 0,
-    'grey-scale-1': #e8e8e8,
-    'grey-scale-2': #d1d0d0,
-    'grey-scale-3': #bbb9b8,
-    'grey-scale-4': #a6a19f,
-    'grey-scale-5': #928984,
-    'grey-scale-6': #7e706a,
-    'grey-scale-7': #675952,
-    'grey-scale-8': #50423b,
-    'grey-scale-9': #372b26,
-    'grey-scale-10': #1d1512,
+    'slate-50': #ebe8e1,
+    'slate-100': #e8e8e8,
+    'slate-200': #d1d0d0,
+    'slate-300': #bbb9b8,
+    'slate-400': #a6a19f,
+    'slate-500': #928984,
+    'slate-600': #7e706a,
+    'slate-700': #675952,
+    'slate-800': #50423b,
+    'slate-900': #372b26,
+    'slate-950': #1d1512,
   ),
 );
 
 html {
   // Override variant colors
-  &[data-steeple-theme-extension] {
+  &[data-steeple-theme-extension]:not([data-steeple-theme-extension='default']) {
     @each $color-name in $steeple-color-names {
       --color-#{$color-name}: rgb(var(--color-#{$color-name}-value));
-      --color-#{$color-name}-90L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 90%);
-      --color-#{$color-name}-80L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 80%);
-      --color-#{$color-name}-70L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 70%);
-      --color-#{$color-name}-60L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 60%);
-      --color-#{$color-name}-50L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 50%);
-      --color-#{$color-name}-40L: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 40%);
-      --color-#{$color-name}-10D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 10%);
-      --color-#{$color-name}-20D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 20%);
-      --color-#{$color-name}-30D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 30%);
-      --color-#{$color-name}-40D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 40%);
-      --color-#{$color-name}-50D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 50%);
-      --color-#{$color-name}-60D: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 60%);
+      --color-#{$color-name}-50: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 90%);
+      --color-#{$color-name}-100: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 80%);
+      --color-#{$color-name}-200: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 70%);
+      --color-#{$color-name}-300: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 50%);
+      --color-#{$color-name}-400: color-mix(in srgb, var(--color-#{$color-name}), var(--color-white) 40%);
+      --color-#{$color-name}-600: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 10%);
+      --color-#{$color-name}-700: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 20%);
+      --color-#{$color-name}-800: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 40%);
+      --color-#{$color-name}-900: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 50%);
+      --color-#{$color-name}-950: color-mix(in srgb, var(--color-#{$color-name}), var(--color-black) 60%);
     }
-
-    --color-background: rgb(var(--color-background-value));
   }
 
   @each $theme, $colors in $themes {
