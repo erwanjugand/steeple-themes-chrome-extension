@@ -1,4 +1,4 @@
-import { getTheme, onChangeTheme, type Theme } from './themes'
+import { type Theme, getTheme, onChangeTheme } from './themes'
 
 console.info('Steeple themes : initialized')
 

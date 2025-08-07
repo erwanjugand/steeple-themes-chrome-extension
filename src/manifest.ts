@@ -4,28 +4,19 @@ export const defineManifest = (): chrome.runtime.ManifestV3 => {
   const pkg = readJsonFile('package.json')
 
   return {
-    manifest_version: 3,
-    name: '__MSG_extensionName__',
-    description: '__MSG_extensionDescription__',
-    version: pkg.version,
-    minimum_chrome_version: '111',
-    author: { email: 'erwan.jugand@gmail.com' },
-    icons: {
-      '16': 'icons/16.png',
-      '32': 'icons/32.png',
-      '48': 'icons/48.png',
-      '128': 'icons/128.png',
-    },
-    default_locale: 'en',
     action: {
-      default_title: '__MSG_extensionName__',
       default_popup: 'src/popup.html',
+      default_title: '__MSG_extensionName__',
     },
-    permissions: ['storage', 'tabs', 'contextMenus', 'webNavigation'],
+    author: { email: 'erwan.jugand@gmail.com' },
+    background: {
+      service_worker: 'src/background.ts',
+      type: 'module',
+    },
     content_scripts: [
       {
-        js: ['src/contentScript.js'],
         css: ['src/themes.scss'],
+        js: ['src/contentScript.js'],
         matches: [
           'https://www.steeple.fr/*',
           'https://app.steeple.com/*',
@@ -34,9 +25,18 @@ export const defineManifest = (): chrome.runtime.ManifestV3 => {
         ],
       },
     ],
-    background: {
-      service_worker: 'src/background.ts',
-      type: 'module',
+    default_locale: 'en',
+    description: '__MSG_extensionDescription__',
+    icons: {
+      '128': 'icons/128.png',
+      '16': 'icons/16.png',
+      '32': 'icons/32.png',
+      '48': 'icons/48.png',
     },
+    manifest_version: 3,
+    minimum_chrome_version: '111',
+    name: '__MSG_extensionName__',
+    permissions: ['storage', 'tabs', 'contextMenus', 'webNavigation'],
+    version: pkg.version,
   }
 }

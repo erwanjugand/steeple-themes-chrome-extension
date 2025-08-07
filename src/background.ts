@@ -8,11 +8,11 @@ getTheme.then(currentTheme => {
 
   themes.forEach(theme => {
     chrome.contextMenus.create({
+      checked: theme === currentTheme,
       id: `steeple-theme-${theme}`,
       parentId: 'steeple-theme-selector',
-      type: 'radio',
       title: chrome.i18n.getMessage(`${theme}Action`),
-      checked: theme === currentTheme,
+      type: 'radio',
     })
   })
 })
@@ -40,8 +40,8 @@ onChangeTheme(currentTheme => {
 })
 
 chrome.tabs.onHighlighted.addListener(async () => {
-  const currentTab = await chrome.tabs.query({ active: true, currentWindow: true })
-  const currentUrl = currentTab?.[0]?.url
+  const [currentTab] = await chrome.tabs.query({ active: true, currentWindow: true })
+  const currentUrl = currentTab?.url
   const visible = currentUrl?.includes('steeple.fr') || currentUrl?.includes('steeple.com')
   chrome.contextMenus.update('steeple-theme-selector', { visible })
 })

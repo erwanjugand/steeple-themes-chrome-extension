@@ -1,16 +1,13 @@
 import { defineConfig } from 'vite'
+import { defineManifest } from './src/manifest'
 import webExtension from 'vite-plugin-web-extension'
 
-import { defineManifest } from './src/manifest'
-
-export default defineConfig(() => {
-  return {
-    plugins: [
-      webExtension({
-        manifest: () => defineManifest(),
-        watchFilePaths: ['src/manifest.ts'],
-        disableAutoLaunch: true,
-      }),
-    ],
-  }
-})
+export default defineConfig(() => ({
+  plugins: [
+    webExtension({
+      disableAutoLaunch: true,
+      manifest: () => defineManifest(),
+      watchFilePaths: ['src/manifest.ts'],
+    }),
+  ],
+}))
