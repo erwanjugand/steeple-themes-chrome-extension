@@ -1,1 +1,1 @@
-type steepleThemeStorage = { [key: string]: string }
+type steepleThemeStorage = Record<string, string>

@@ -8,20 +8,20 @@
     "build": "vite build && pnpm zip",
     "zip": "mkdir -p zip && npm-build-zip --source=dist --destination=zip",
     "check:prettier": "prettier --check .",
-    "check:eslint": "eslint .",
+    "check:lint": "oxlint",
     "check:stylelint": "stylelint **/*.{scss,vue}",
-    "check:all": "pnpm check:prettier && pnpm check:eslint && pnpm check:stylelint",
+    "check:all": "pnpm check:prettier && pnpm check:lint && pnpm check:stylelint",
     "fix:prettier": "prettier --log-level warn --write .",
-    "fix:eslint": "pnpm check:eslint --fix",
+    "fix:lint": "pnpm check:lint --fix --fix-suggestions",
     "fix:stylelint": "pnpm check:stylelint --fix",
-    "fix:all": "pnpm fix:prettier && pnpm fix:eslint && pnpm fix:stylelint"
+    "fix:all": "pnpm fix:prettier && pnpm fix:lint && pnpm fix:stylelint"
   },
   "devDependencies": {
+    "@prettier/plugin-oxc": "0.0.4",
     "@types/chrome": "0.1.1",
     "@types/node": "22",
-    "eslint": "9.31.0",
-    "eslint-config-prettier": "10.1.8",
     "npm-build-zip": "1.0.4",
+    "oxlint": "1.11.0",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
     "sass": "1.89.2",
@@ -29,7 +29,6 @@
     "stylelint-config-standard-scss": "15.0.1",
     "stylelint-plugin-use-baseline": "0.6.1",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.37.0",
     "vite": "7.0.5",
     "vite-plugin-web-extension": "4.4.5"
   }

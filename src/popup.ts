@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Translate popup
   const elementToTranslate = document.querySelectorAll<HTMLElement>('[data-i18n]')
   elementToTranslate.forEach(element => {
-    element.innerText = chrome.i18n.getMessage(element.dataset.i18n || '')
+    element.textContent = chrome.i18n.getMessage(element.dataset.i18n ?? '')
   })
 
   // Set version
   const footerVersion = document.querySelector<HTMLElement>('.footer-version')
   if (footerVersion) {
     const { version } = chrome.runtime.getManifest()
-    footerVersion.innerText = version
+    footerVersion.textContent = version
   }
 
   // Get current theme
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const actions = document.querySelectorAll<HTMLButtonElement>('.main-action')
   actions.forEach(action => {
     action.addEventListener('click', async () => {
-      const theme = action.dataset.theme
+      const { theme } = action.dataset
       if (!isTheme(theme)) return
       await setTheme(theme)
 
