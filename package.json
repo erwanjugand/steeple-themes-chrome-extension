@@ -19,7 +19,7 @@
   "devDependencies": {
     "@prettier/plugin-oxc": "0.0.4",
     "@types/chrome": "0.1.11",
-    "@types/node": "22.18.2",
+    "@types/node": "22.18.3",
     "npm-build-zip": "1.0.4",
     "oxlint": "1.15.0",
     "postcss": "8.5.6",
