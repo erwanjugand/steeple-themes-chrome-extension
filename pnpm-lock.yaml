@@ -12,17 +12,17 @@ importers:
         specifier: 0.0.4
         version: 0.0.4
       '@types/chrome':
-        specifier: 0.1.4
-        version: 0.1.4
+        specifier: 0.1.11
+        version: 0.1.11
       '@types/node':
-        specifier: 22.17.2
-        version: 22.17.2
+        specifier: 22.18.2
+        version: 22.18.2
       npm-build-zip:
         specifier: 1.0.4
         version: 1.0.4
       oxlint:
-        specifier: 1.11.2
-        version: 1.11.2
+        specifier: 1.15.0
+        version: 1.15.0
       postcss:
         specifier: 8.5.6
         version: 8.5.6
@@ -30,32 +30,32 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       sass:
-        specifier: 1.90.0
-        version: 1.90.0
+        specifier: 1.92.1
+        version: 1.92.1
       stylelint:
-        specifier: 16.23.1
-        version: 16.23.1(typescript@5.9.2)
+        specifier: 16.24.0
+        version: 16.24.0(typescript@5.9.2)
       stylelint-config-recess-order:
-        specifier: 7.2.0
-        version: 7.2.0(stylelint-order@7.0.0(stylelint@16.23.1(typescript@5.9.2)))(stylelint@16.23.1(typescript@5.9.2))
+        specifier: 7.3.0
+        version: 7.3.0(stylelint-order@7.0.0(stylelint@16.24.0(typescript@5.9.2)))(stylelint@16.24.0(typescript@5.9.2))
       stylelint-config-standard-scss:
         specifier: 15.0.1
-        version: 15.0.1(postcss@8.5.6)(stylelint@16.23.1(typescript@5.9.2))
+        version: 15.0.1(postcss@8.5.6)(stylelint@16.24.0(typescript@5.9.2))
       stylelint-order:
         specifier: 7.0.0
-        version: 7.0.0(stylelint@16.23.1(typescript@5.9.2))
+        version: 7.0.0(stylelint@16.24.0(typescript@5.9.2))
       stylelint-plugin-use-baseline:
-        specifier: 0.8.1
-        version: 0.8.1(stylelint@16.23.1(typescript@5.9.2))
+        specifier: 0.9.1
+        version: 0.9.1(stylelint@16.24.0(typescript@5.9.2))
       typescript:
         specifier: 5.9.2
         version: 5.9.2
       vite:
         specifier: 7.1.5
-        version: 7.1.5(@types/node@22.17.2)(sass@1.90.0)(yaml@2.8.1)
+        version: 7.1.5(@types/node@22.18.2)(sass@1.92.1)(yaml@2.8.1)
       vite-plugin-web-extension:
         specifier: 4.4.5
-        version: 4.4.5(@types/node@22.17.2)(sass@1.90.0)
+        version: 4.4.5(@types/node@22.18.2)(sass@1.92.1)
 
 packages:
 
@@ -385,73 +385,43 @@ packages:
   '@oxc-project/types@0.74.0':
     resolution: {integrity: sha512-KOw/RZrVlHGhCXh1RufBFF7Nuo7HdY5w1lRJukM/igIl6x9qtz8QycDvZdzb4qnHO7znrPyo2sJrFJK2eKHgfQ==}
 
-  '@oxlint-tsgolint/darwin-arm64@0.0.2':
-    resolution: {integrity: sha512-LH6tDgvQkF7ui+lNuRjJeaJTdYCfxMXI0j8YTbbLVSHz42EI5DTJDtngsCd2dSlUfKAJqaehECKccqcJ3yueHQ==}
+  '@oxlint/darwin-arm64@1.15.0':
+    resolution: {integrity: sha512-fwYg7WDKI6eAErREBGMXkIAOqBuBFN0LWbQJvVNXCGjywGxsisdwkHnNu4UG8IpHo4P71mUxf3l2xm+5Xiy+TA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint-tsgolint/darwin-x64@0.0.2':
-    resolution: {integrity: sha512-VEUXK5h4ZyCM3O++dK7A+IcqwqWv8zfRKyM1vgcIrnQXtwvbs9KFyK6I0BSnMBCV9be67b9Gl7TDeSS8jBchpw==}
+  '@oxlint/darwin-x64@1.15.0':
+    resolution: {integrity: sha512-RtaAmB6NZZx4hvjCg6w35shzRY5fLclbMsToC92MTZ9lMDF9LotzcbyNHCZ1tvZb1tNPObpIsuX16BFeElF8nw==}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint-tsgolint/linux-arm64@0.0.2':
-    resolution: {integrity: sha512-A/NtWuq+u+Y6oAo7p6D18rmkckHL/nx0GrqlZvfHAWOJYXXLanLX0QozPPDoSH8zRwHc7W7t95JU8awS7Krp4Q==}
+  '@oxlint/linux-arm64-gnu@1.15.0':
+    resolution: {integrity: sha512-8uV0lAbmqp93KTBlJWyCdQWuxTzLn+QrDRidUaCLJjn65uvv8KlRhZJoZoyLh17X6U/cgezYktWTMiMhxX56BA==}
     cpu: [arm64]
     os: [linux]
 
-  '@oxlint-tsgolint/linux-x64@0.0.2':
-    resolution: {integrity: sha512-p42pKfILRhm/cE8Y5BgXlQpM22Q+Olhy9A60VvOW0epu/Vr/FtUa/MbZJ2wGRuAKSm8oW9JhgjIj5laSWAX8vg==}
+  '@oxlint/linux-arm64-musl@1.15.0':
+    resolution: {integrity: sha512-/+hTqh1J29+2GitKrWUHIYjQBM1szWSJ1U7OzQlgL+Uvf8jxg4sn1nV79LcPMXhC2t8lZy5EOXOgwIh92DsdhQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@oxlint/linux-x64-gnu@1.15.0':
+    resolution: {integrity: sha512-GzeY3AhUd49yV+/76Gw0pjpwUJwxCkwYAJTNe7fFTdWjEQ6M6g8ZzJg5FKtUvgA5sMgmfzHhvSXxvT57YhcXnA==}
     cpu: [x64]
     os: [linux]
 
-  '@oxlint-tsgolint/win32-arm64@0.0.2':
-    resolution: {integrity: sha512-LTKCeeKZRd4vT+C3y7d0KEYqAzIiLvf/189H6ispKtfyKeQKxOGU+XG9xRP4GovPvZOYL6fIsVxe09BUaNuDnA==}
+  '@oxlint/linux-x64-musl@1.15.0':
+    resolution: {integrity: sha512-p/7+juizUOCpGYreFmdfmIOSSSE3+JfsgnXnOHuP8mqlZfiOeXyevyajuXpPNRM60+k0reGvlV7ezp1iFitF7w==}
+    cpu: [x64]
+    os: [linux]
+
+  '@oxlint/win32-arm64@1.15.0':
+    resolution: {integrity: sha512-2LaDLOtCMq+lzIQ63Eir3UJV/hQNlw01xtsij2L8sSxt4gA+zWvubOQJQIOPGMDxEKFcWT1lo/6YEXX/sNnZDA==}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint-tsgolint/win32-x64@0.0.2':
-    resolution: {integrity: sha512-SdrPYSkBHd43WY5h78ICLVS851/379pzIjUVM1LDltZuAgv209H8f1/g5cdX4gY46RDvV86guLh+PbfMHHugog==}
-    cpu: [x64]
-    os: [win32]
-
-  '@oxlint/darwin-arm64@1.11.2':
-    resolution: {integrity: sha512-eJZ1VKaS9qj44FTus3qTu790xMnJ/GViJcoVF3zNux5m3lOiWhwJB149+P7a7LcTowNdc26i1DmwcWxUllPwZw==}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@oxlint/darwin-x64@1.11.2':
-    resolution: {integrity: sha512-KH9BJ5ObkReIr00IbGaImqL2q4CCjIAk9HxgULvWpjSnqUL7OgJFZAabb9Z5ZS0+RyZrKUtd1ZU/Ackb6k4G3Q==}
-    cpu: [x64]
-    os: [darwin]
-
-  '@oxlint/linux-arm64-gnu@1.11.2':
-    resolution: {integrity: sha512-nIhyGApnEuqLazaSwvEkg5pMm2rlBPJccAGrNmJPcMukKbD5fUYyuCvkm9CFUqTm1+MIYrs5bTeRhnDSEa2mYw==}
-    cpu: [arm64]
-    os: [linux]
-
-  '@oxlint/linux-arm64-musl@1.11.2':
-    resolution: {integrity: sha512-ifrqaBwVYt3g6GUbIwF9G9pTvkIvbs47F47oSjVogdy5hn2yEEi1zxyYGV9AFF3zVMgp2xDIO8G/gTuz1WPHkg==}
-    cpu: [arm64]
-    os: [linux]
-
-  '@oxlint/linux-x64-gnu@1.11.2':
-    resolution: {integrity: sha512-yWCgoOQ0xA/AxJ7ruLMR/YMKYEwV048vrWftZGCjKPYgZeZe9bpghAoRlLi6qjw7ReNpctk9Ho+l35TYXNqhzA==}
-    cpu: [x64]
-    os: [linux]
-
-  '@oxlint/linux-x64-musl@1.11.2':
-    resolution: {integrity: sha512-nYer9TaY/gC+kVwOfb9DxZh0dNdqFI8ax/MD9TwH8p3ZnWuUe1Ocfpg0V94tuPoGxHFqcXU7GRD1cTvREHfcTg==}
-    cpu: [x64]
-    os: [linux]
-
-  '@oxlint/win32-arm64@1.11.2':
-    resolution: {integrity: sha512-zbfZ7r68MyxQ2GAg/jFzIQCFrL8lcwnxfIEqY+V16/Xcd1rZVfMH3PwJMloib26pOLH6/RUlC5IjdVo8icadHA==}
-    cpu: [arm64]
-    os: [win32]
-
-  '@oxlint/win32-x64@1.11.2':
-    resolution: {integrity: sha512-eSATaCIUwdh+t9gu9xoETjh+0PYwjVSLtnZ20XakKNjvee4KmQbWXCxXyA1vz1E0qxiUX/fYqsaOHueIwQ2LVA==}
+  '@oxlint/win32-x64@1.15.0':
+    resolution: {integrity: sha512-+jgRPpZrFIcrNxCVsDIy6HVCRpKVDN0DHD8VJodjrsDv6heqhq/qCTa2IXY3R4glWe1nWQ5JgdFKLn3Bl+aLNg==}
     cpu: [x64]
     os: [win32]
 
@@ -656,8 +626,8 @@ packages:
   '@tybys/wasm-util@0.10.0':
     resolution: {integrity: sha512-VyyPYFlOMNylG45GoAe0xDoLwWuowvf92F9kySqzYh8vmYm7D2u4iUJKa1tOUpS70Ku13ASrOkS4ScXFsTaCNQ==}
 
-  '@types/chrome@0.1.4':
-    resolution: {integrity: sha512-vfISO7SPppN3OKVUqWujtZ4vux3nhDqKaHYEHgfQuPARHuWJ3jjyc1s13H0ckzEc86/neTkCl1TeW72UK6jYKA==}
+  '@types/chrome@0.1.11':
+    resolution: {integrity: sha512-8KFchpiY51tZaOpojRM9WPkJzr3ZLei1blsR8nkr42XXMKav4GXQgDK/lP1JTP2wsljXhpDDqAsGw9eOgm8G9Q==}
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -674,8 +644,8 @@ packages:
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
 
-  '@types/node@22.17.2':
-    resolution: {integrity: sha512-gL6z5N9Jm9mhY+U2KXZpteb+09zyffliRkZyZOHODGATyC5B1Jt/7TzuuiLkFsSUMLbS1OLmlj/E+/3KF4Q/4w==}
+  '@types/node@22.18.2':
+    resolution: {integrity: sha512-lif9hF9afNk39jMUVYk5eyYEojLZQqaYX61LfuwUJJ1+qiQbh7jVaZXskYgzyjAIFDFQRf5Sd6MVM7EyXkfiRw==}
 
   adm-zip@0.5.16:
     resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
@@ -808,8 +778,8 @@ packages:
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
 
-  cacheable@1.10.3:
-    resolution: {integrity: sha512-M6p10iJ/VT0wT7TLIGUnm958oVrU2cUK8pQAVU21Zu7h8rbk/PeRtRWrvHJBql97Bhzk3g1N6+2VKC+Rjxna9Q==}
+  cacheable@1.10.4:
+    resolution: {integrity: sha512-Gd7ccIUkZ9TE2odLQVS+PDjIvQCdJKUlLdJRVvZu0aipj07Qfx+XIej7hhDrKGGoIxV5m5fT/kOJNJPQhQneRg==}
 
   call-bind-apply-helpers@1.0.2:
     resolution: {integrity: sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==}
@@ -1089,8 +1059,8 @@ packages:
       picomatch:
         optional: true
 
-  file-entry-cache@10.1.3:
-    resolution: {integrity: sha512-D+w75Ub8T55yor7fPgN06rkCAUbAYw2vpxJmmjv/GDAcvCnv9g7IvHhIZoxzRZThrXPFI2maeY24pPbtyYU7Lg==}
+  file-entry-cache@10.1.4:
+    resolution: {integrity: sha512-5XRUFc0WTtUbjfGzEwXc42tiGxQHBmtbUG1h9L2apu4SulCGN3Hqm//9D6FAolf8MYNL7f/YlJl9vy08pj5JuA==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -1105,8 +1075,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  flat-cache@6.1.12:
-    resolution: {integrity: sha512-U+HqqpZPPXP5d24bWuRzjGqVqUcw64k4nZAbruniDwdRg0H10tvN7H6ku1tjhA4rg5B9GS3siEvwO2qjJJ6f8Q==}
+  flat-cache@6.1.13:
+    resolution: {integrity: sha512-gmtS2PaUjSPa4zjObEIn4WWliKyZzYljgxODBfxugpK6q6HU9ClXzgCJ+nlcPKY9Bt090ypTOLIFWkV0jbKFjw==}
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
@@ -1563,14 +1533,15 @@ packages:
     resolution: {integrity: sha512-2tDN/ttU8WE6oFh8EzKNam7KE7ZXSG5uXmvX85iNzxdJfMssDWcj3gpYzZi1E04XuE7m3v1dVWl/8BE886vPGw==}
     engines: {node: '>=20.0.0'}
 
-  oxlint-tsgolint@0.0.2:
-    resolution: {integrity: sha512-afl7YXlHyiLb7YxL6ixAQ/1JLBy52vzk07+fTT53tPdyUZPpbkJz1CJMGNLteaX1t+vDq6wXdCj4xTO2jcViGQ==}
-    hasBin: true
-
-  oxlint@1.11.2:
-    resolution: {integrity: sha512-/MDUxbel5vrwxWgiGU6hZzhDiTv0TUlyZak+WP+SaTO709du+6F07zCDvYj5lgkAnEcFbdrUlA67HEnleGR0Zw==}
+  oxlint@1.15.0:
+    resolution: {integrity: sha512-GZngkdF2FabM0pp0/l5OOhIQg+9L6LmOrmS8V8Vg+Swv9/VLJd/oc/LtAkv4HO45BNWL3EVaXzswI0CmGokVzw==}
     engines: {node: '>=8.*'}
     hasBin: true
+    peerDependencies:
+      oxlint-tsgolint: '>=0.2.0'
+    peerDependenciesMeta:
+      oxlint-tsgolint:
+        optional: true
 
   p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
@@ -1775,8 +1746,8 @@ packages:
   sanitize-filename@1.6.3:
     resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
 
-  sass@1.90.0:
-    resolution: {integrity: sha512-9GUyuksjw70uNpb1MTYWsH9MQHOHY6kwfnkafC24+7aOMZn9+rVMBxRbLvw756mrBFbIsFg6Xw9IkR2Fnn3k+Q==}
+  sass@1.92.1:
+    resolution: {integrity: sha512-ffmsdbwqb3XeyR8jJR6KelIXARM9bFQe8A6Q3W4Klmwy5Ckd5gz7jgUNHo4UOqutU5Sk1DtKLbpDP0nLCg1xqQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1886,8 +1857,8 @@ packages:
   stubborn-fs@1.2.5:
     resolution: {integrity: sha512-H2N9c26eXjzL/S/K+i/RHHcFanE74dptvvjM8iwzwbVcWY/zjBbgRqF3K0DY4+OD+uTTASTBvDoxPDaPN02D7g==}
 
-  stylelint-config-recess-order@7.2.0:
-    resolution: {integrity: sha512-3Y97dhsWkUHFKRLGNLF6LE5JuNB2EVAZKYJ41wBRK4gplYdk7eHhSIwE24hanu0AoNmv5534Djip70pE+y5qkA==}
+  stylelint-config-recess-order@7.3.0:
+    resolution: {integrity: sha512-1LZhQi/D6OljSLRKejMEzbZA8h0AKkJH7p2y+eValc9ltWRGVznjnZsNLVCOwYpKk7GlYMLNVYTc9WpA0W3TYQ==}
     peerDependencies:
       stylelint: '>=16.18'
       stylelint-order: '>=7'
@@ -1930,8 +1901,8 @@ packages:
     peerDependencies:
       stylelint: ^16.18.0
 
-  stylelint-plugin-use-baseline@0.8.1:
-    resolution: {integrity: sha512-9HNP82g+zjMjpyS4GpJxTzmZXmX2sOt05rcVTmiAHjUIBD49xwKfz2u5qJiyWcJyHk+m4n4IKVhIVxHQOcN1wA==}
+  stylelint-plugin-use-baseline@0.9.1:
+    resolution: {integrity: sha512-L0I72+TCGhIn+6L9pRpKMlk9cvfhh7GnBQfPWFtx2ghRKIC7JO3RBW404zYxUgEGedeJPRIsVOWfVbde+kqmHQ==}
     peerDependencies:
       stylelint: ^16.0.2
 
@@ -1941,8 +1912,8 @@ packages:
     peerDependencies:
       stylelint: ^16.0.2
 
-  stylelint@16.23.1:
-    resolution: {integrity: sha512-dNvDTsKV1U2YtiUDfe9d2gp902veFeo3ecCWdGlmLm2WFrAV0+L5LoOj/qHSBABQwMsZPJwfC4bf39mQm1S5zw==}
+  stylelint@16.24.0:
+    resolution: {integrity: sha512-7ksgz3zJaSbTUGr/ujMXvLVKdDhLbGl3R/3arNudH7z88+XZZGNLMTepsY28WlnvEFcuOmUe7fg40Q3lfhOfSQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -2407,46 +2378,28 @@ snapshots:
 
   '@oxc-project/types@0.74.0': {}
 
-  '@oxlint-tsgolint/darwin-arm64@0.0.2':
+  '@oxlint/darwin-arm64@1.15.0':
     optional: true
 
-  '@oxlint-tsgolint/darwin-x64@0.0.2':
+  '@oxlint/darwin-x64@1.15.0':
     optional: true
 
-  '@oxlint-tsgolint/linux-arm64@0.0.2':
+  '@oxlint/linux-arm64-gnu@1.15.0':
     optional: true
 
-  '@oxlint-tsgolint/linux-x64@0.0.2':
+  '@oxlint/linux-arm64-musl@1.15.0':
     optional: true
 
-  '@oxlint-tsgolint/win32-arm64@0.0.2':
+  '@oxlint/linux-x64-gnu@1.15.0':
     optional: true
 
-  '@oxlint-tsgolint/win32-x64@0.0.2':
+  '@oxlint/linux-x64-musl@1.15.0':
     optional: true
 
-  '@oxlint/darwin-arm64@1.11.2':
+  '@oxlint/win32-arm64@1.15.0':
     optional: true
 
-  '@oxlint/darwin-x64@1.11.2':
-    optional: true
-
-  '@oxlint/linux-arm64-gnu@1.11.2':
-    optional: true
-
-  '@oxlint/linux-arm64-musl@1.11.2':
-    optional: true
-
-  '@oxlint/linux-x64-gnu@1.11.2':
-    optional: true
-
-  '@oxlint/linux-x64-musl@1.11.2':
-    optional: true
-
-  '@oxlint/win32-arm64@1.11.2':
-    optional: true
-
-  '@oxlint/win32-x64@1.11.2':
+  '@oxlint/win32-x64@1.15.0':
     optional: true
 
   '@parcel/watcher-android-arm64@2.5.1':
@@ -2591,7 +2544,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@types/chrome@0.1.4':
+  '@types/chrome@0.1.11':
     dependencies:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
@@ -2608,7 +2561,7 @@ snapshots:
 
   '@types/minimatch@3.0.5': {}
 
-  '@types/node@22.17.2':
+  '@types/node@22.18.2':
     dependencies:
       undici-types: 6.21.0
 
@@ -2748,7 +2701,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  cacheable@1.10.3:
+  cacheable@1.10.4:
     dependencies:
       hookified: 1.11.0
       keyv: 5.5.0
@@ -2786,7 +2739,7 @@ snapshots:
 
   chrome-launcher@1.1.2:
     dependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.2
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 2.0.2
@@ -3032,9 +2985,9 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.3
 
-  file-entry-cache@10.1.3:
+  file-entry-cache@10.1.4:
     dependencies:
-      flat-cache: 6.1.12
+      flat-cache: 6.1.13
 
   fill-range@7.1.1:
     dependencies:
@@ -3052,9 +3005,9 @@ snapshots:
       minimist: 1.2.8
       xml2js: 0.6.2
 
-  flat-cache@6.1.12:
+  flat-cache@6.1.13:
     dependencies:
-      cacheable: 1.10.3
+      cacheable: 1.10.4
       flatted: 3.3.3
       hookified: 1.11.0
 
@@ -3489,27 +3442,16 @@ snapshots:
       '@oxc-parser/binding-win32-arm64-msvc': 0.74.0
       '@oxc-parser/binding-win32-x64-msvc': 0.74.0
 
-  oxlint-tsgolint@0.0.2:
+  oxlint@1.15.0:
     optionalDependencies:
-      '@oxlint-tsgolint/darwin-arm64': 0.0.2
-      '@oxlint-tsgolint/darwin-x64': 0.0.2
-      '@oxlint-tsgolint/linux-arm64': 0.0.2
-      '@oxlint-tsgolint/linux-x64': 0.0.2
-      '@oxlint-tsgolint/win32-arm64': 0.0.2
-      '@oxlint-tsgolint/win32-x64': 0.0.2
-    optional: true
-
-  oxlint@1.11.2:
-    optionalDependencies:
-      '@oxlint/darwin-arm64': 1.11.2
-      '@oxlint/darwin-x64': 1.11.2
-      '@oxlint/linux-arm64-gnu': 1.11.2
-      '@oxlint/linux-arm64-musl': 1.11.2
-      '@oxlint/linux-x64-gnu': 1.11.2
-      '@oxlint/linux-x64-musl': 1.11.2
-      '@oxlint/win32-arm64': 1.11.2
-      '@oxlint/win32-x64': 1.11.2
-      oxlint-tsgolint: 0.0.2
+      '@oxlint/darwin-arm64': 1.15.0
+      '@oxlint/darwin-x64': 1.15.0
+      '@oxlint/linux-arm64-gnu': 1.15.0
+      '@oxlint/linux-arm64-musl': 1.15.0
+      '@oxlint/linux-x64-gnu': 1.15.0
+      '@oxlint/linux-x64-musl': 1.15.0
+      '@oxlint/win32-arm64': 1.15.0
+      '@oxlint/win32-x64': 1.15.0
 
   p-limit@2.3.0:
     dependencies:
@@ -3717,7 +3659,7 @@ snapshots:
     dependencies:
       truncate-utf8-bytes: 1.0.2
 
-  sass@1.90.0:
+  sass@1.92.1:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
@@ -3827,51 +3769,51 @@ snapshots:
 
   stubborn-fs@1.2.5: {}
 
-  stylelint-config-recess-order@7.2.0(stylelint-order@7.0.0(stylelint@16.23.1(typescript@5.9.2)))(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-recess-order@7.3.0(stylelint-order@7.0.0(stylelint@16.24.0(typescript@5.9.2)))(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
-      stylelint: 16.23.1(typescript@5.9.2)
-      stylelint-order: 7.0.0(stylelint@16.23.1(typescript@5.9.2))
+      stylelint: 16.24.0(typescript@5.9.2)
+      stylelint-order: 7.0.0(stylelint@16.24.0(typescript@5.9.2))
 
-  stylelint-config-recommended-scss@15.0.1(postcss@8.5.6)(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-recommended-scss@15.0.1(postcss@8.5.6)(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
       postcss-scss: 4.0.9(postcss@8.5.6)
-      stylelint: 16.23.1(typescript@5.9.2)
-      stylelint-config-recommended: 16.0.0(stylelint@16.23.1(typescript@5.9.2))
-      stylelint-scss: 6.12.1(stylelint@16.23.1(typescript@5.9.2))
+      stylelint: 16.24.0(typescript@5.9.2)
+      stylelint-config-recommended: 16.0.0(stylelint@16.24.0(typescript@5.9.2))
+      stylelint-scss: 6.12.1(stylelint@16.24.0(typescript@5.9.2))
     optionalDependencies:
       postcss: 8.5.6
 
-  stylelint-config-recommended@16.0.0(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-recommended@16.0.0(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
-  stylelint-config-standard-scss@15.0.1(postcss@8.5.6)(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-standard-scss@15.0.1(postcss@8.5.6)(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
-      stylelint: 16.23.1(typescript@5.9.2)
-      stylelint-config-recommended-scss: 15.0.1(postcss@8.5.6)(stylelint@16.23.1(typescript@5.9.2))
-      stylelint-config-standard: 38.0.0(stylelint@16.23.1(typescript@5.9.2))
+      stylelint: 16.24.0(typescript@5.9.2)
+      stylelint-config-recommended-scss: 15.0.1(postcss@8.5.6)(stylelint@16.24.0(typescript@5.9.2))
+      stylelint-config-standard: 38.0.0(stylelint@16.24.0(typescript@5.9.2))
     optionalDependencies:
       postcss: 8.5.6
 
-  stylelint-config-standard@38.0.0(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-config-standard@38.0.0(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
-      stylelint: 16.23.1(typescript@5.9.2)
-      stylelint-config-recommended: 16.0.0(stylelint@16.23.1(typescript@5.9.2))
+      stylelint: 16.24.0(typescript@5.9.2)
+      stylelint-config-recommended: 16.0.0(stylelint@16.24.0(typescript@5.9.2))
 
-  stylelint-order@7.0.0(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-order@7.0.0(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
       postcss: 8.5.6
       postcss-sorting: 9.1.0(postcss@8.5.6)
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
-  stylelint-plugin-use-baseline@0.8.1(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-plugin-use-baseline@0.9.1(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
       css-tree: 3.1.0
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
-  stylelint-scss@6.12.1(stylelint@16.23.1(typescript@5.9.2)):
+  stylelint-scss@6.12.1(stylelint@16.24.0(typescript@5.9.2)):
     dependencies:
       css-tree: 3.1.0
       is-plain-object: 5.0.0
@@ -3881,9 +3823,9 @@ snapshots:
       postcss-resolve-nested-selector: 0.1.6
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
-      stylelint: 16.23.1(typescript@5.9.2)
+      stylelint: 16.24.0(typescript@5.9.2)
 
-  stylelint@16.23.1(typescript@5.9.2):
+  stylelint@16.24.0(typescript@5.9.2):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
@@ -3898,7 +3840,7 @@ snapshots:
       debug: 4.4.1
       fast-glob: 3.3.3
       fastest-levenshtein: 1.0.16
-      file-entry-cache: 10.1.3
+      file-entry-cache: 10.1.4
       global-modules: 2.0.0
       globby: 11.1.0
       globjoin: 0.1.4
@@ -4025,7 +3967,7 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  vite-plugin-web-extension@4.4.5(@types/node@22.17.2)(sass@1.90.0):
+  vite-plugin-web-extension@4.4.5(@types/node@22.18.2)(sass@1.92.1):
     dependencies:
       ajv: 8.17.1
       async-lock: 1.4.1
@@ -4035,7 +3977,7 @@ snapshots:
       lodash.uniq: 4.5.0
       lodash.uniqby: 4.7.0
       md5: 2.3.0
-      vite: 7.1.5(@types/node@22.17.2)(sass@1.90.0)(yaml@2.8.1)
+      vite: 7.1.5(@types/node@22.18.2)(sass@1.92.1)(yaml@2.8.1)
       web-ext-option-types: 8.3.1
       web-ext-run: 0.2.3
       webextension-polyfill: 0.10.0
@@ -4055,7 +3997,7 @@ snapshots:
       - tsx
       - utf-8-validate
 
-  vite@7.1.5(@types/node@22.17.2)(sass@1.90.0)(yaml@2.8.1):
+  vite@7.1.5(@types/node@22.18.2)(sass@1.92.1)(yaml@2.8.1):
     dependencies:
       esbuild: 0.25.9
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4064,9 +4006,9 @@ snapshots:
       rollup: 4.46.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.17.2
+      '@types/node': 22.18.2
       fsevents: 2.3.3
-      sass: 1.90.0
+      sass: 1.92.1
       yaml: 2.8.1
 
   walkdir@0.0.11: {}
