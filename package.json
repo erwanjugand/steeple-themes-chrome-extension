@@ -18,20 +18,20 @@
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "0.0.4",
-    "@types/chrome": "0.1.11",
-    "@types/node": "22.18.3",
+    "@types/chrome": "0.1.22",
+    "@types/node": "22.18.8",
     "npm-build-zip": "1.0.4",
-    "oxlint": "1.15.0",
+    "oxlint": "1.19.0",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
-    "sass": "1.92.1",
-    "stylelint": "16.24.0",
+    "sass": "1.93.2",
+    "stylelint": "16.25.0",
     "stylelint-config-recess-order": "7.3.0",
     "stylelint-config-standard-scss": "16.0.0",
     "stylelint-order": "7.0.0",
     "stylelint-plugin-use-baseline": "1.0.0",
-    "typescript": "5.9.2",
-    "vite": "7.1.5",
+    "typescript": "5.9.3",
+    "vite": "7.1.9",
     "vite-plugin-web-extension": "4.4.5"
   }
 }
