@@ -6,6 +6,7 @@
     "import/no-named-export": "off",
     "eslint/no-ternary": "off",
     "unicorn/switch-case-braces": ["error", "avoid"],
+    "unicorn/prefer-top-level-await": "off",
     "import/consistent-type-specifier-style": ["error", "prefer-inline"],
     "curly": "off"
   },

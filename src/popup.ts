@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // Get current theme
-
   await getTheme.then(theme => {
     const activeAction = document.querySelector(`.main-action[data-theme="${theme}"]`)
     if (!activeAction) return

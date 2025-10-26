@@ -17,12 +17,7 @@ export const defineManifest = (): chrome.runtime.ManifestV3 => {
       {
         css: ['src/themes.scss'],
         js: ['src/contentScript.js'],
-        matches: [
-          'https://www.steeple.fr/*',
-          'https://app.steeple.com/*',
-          'https://tv.steeple.fr/*',
-          'https://tv.steeple.com/*',
-        ],
+        matches: ['https://*.steeple.com/*'],
       },
     ],
     default_locale: 'en',
