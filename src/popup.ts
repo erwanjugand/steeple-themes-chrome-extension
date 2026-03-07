@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!isTheme(theme)) return
       await setTheme(theme)
 
-      actions.forEach(action => {
-        action.classList.remove('active')
+      actions.forEach(actionElement => {
+        actionElement.classList.remove('active')
       })
-      action.classList.add('active')
+      actionElement.classList.add('active')
     })
   })
 })
