@@ -3,7 +3,7 @@ import { getTheme, isTheme, setTheme } from './themes'
 document.addEventListener('DOMContentLoaded', async () => {
   // Translate popup
   const elementToTranslate = document.querySelectorAll<HTMLElement>('[data-i18n]')
-  elementToTranslate.forEach(element => {
+  elementToTranslate.forEach((element) => {
     element.textContent = chrome.i18n.getMessage(element.dataset.i18n ?? '')
   })
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // Get current theme
-  await getTheme.then(theme => {
+  await getTheme.then((theme) => {
     const activeAction = document.querySelector(`.main-action[data-theme="${theme}"]`)
     if (!activeAction) return
     activeAction.classList.add('active')
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Set theme
   const actions = document.querySelectorAll<HTMLButtonElement>('.main-action')
-  actions.forEach(action => {
+  actions.forEach((action) => {
     action.addEventListener('click', async () => {
       const { theme } = action.dataset
       if (!isTheme(theme)) return
       await setTheme(theme)
 
-      actions.forEach(actionElement => {
+      actions.forEach((actionElement) => {
         actionElement.classList.remove('active')
       })
       actionElement.classList.add('active')

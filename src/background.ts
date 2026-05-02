@@ -1,12 +1,12 @@
 import { getTheme, onChangeTheme, setTheme, themes } from './themes'
 
-getTheme.then(currentTheme => {
+getTheme.then((currentTheme) => {
   chrome.contextMenus.create({
     id: 'steeple-theme-selector',
     title: chrome.i18n.getMessage('extensionName'),
   })
 
-  themes.forEach(theme => {
+  themes.forEach((theme) => {
     chrome.contextMenus.create({
       checked: theme === currentTheme,
       id: `steeple-theme-${theme}`,
@@ -33,8 +33,8 @@ chrome.contextMenus.onClicked.addListener(({ parentMenuItemId, menuItemId }) => 
   }
 })
 
-onChangeTheme(currentTheme => {
-  themes.forEach(theme => {
+onChangeTheme((currentTheme) => {
+  themes.forEach((theme) => {
     chrome.contextMenus.update(`steeple-theme-${theme}`, { checked: theme === currentTheme })
   })
 })
