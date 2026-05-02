@@ -23,7 +23,7 @@ const isTheme = (theme: unknown): theme is Theme => {
 }
 
 const onChangeTheme = (callback: (theme: Theme) => void) => {
-  chrome.storage.onChanged.addListener(changes => {
+  chrome.storage.onChanged.addListener((changes) => {
     if (!changes[themeKeyStorage]) return
     callback(changes[themeKeyStorage].newValue)
   })
