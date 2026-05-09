@@ -9,8 +9,11 @@ importers:
   .:
     devDependencies:
       '@erwanjugand/prettier-config':
-        specifier: 1.0.0
-        version: 1.0.0(prettier@3.8.3)
+        specifier: 1.0.1
+        version: 1.0.1(prettier@3.8.3)
+      '@erwanjugand/stylelint-config':
+        specifier: 1.0.1
+        version: 1.0.1(postcss@8.5.13)(stylelint@17.9.1(typescript@6.0.3))
       '@prettier/plugin-oxc':
         specifier: 0.1.4
         version: 0.1.4
@@ -38,18 +41,6 @@ importers:
       stylelint:
         specifier: 17.9.1
         version: 17.9.1(typescript@6.0.3)
-      stylelint-config-recess-order:
-        specifier: 7.7.0
-        version: 7.7.0(stylelint-order@8.1.1(stylelint@17.9.1(typescript@6.0.3)))(stylelint@17.9.1(typescript@6.0.3))
-      stylelint-config-standard-scss:
-        specifier: 17.0.0
-        version: 17.0.0(postcss@8.5.13)(stylelint@17.9.1(typescript@6.0.3))
-      stylelint-order:
-        specifier: 8.1.1
-        version: 8.1.1(stylelint@17.9.1(typescript@6.0.3))
-      stylelint-plugin-use-baseline:
-        specifier: 1.4.1
-        version: 1.4.1(stylelint@17.9.1(typescript@6.0.3))
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -184,10 +175,15 @@ packages:
   '@emnapi/wasi-threads@1.2.1':
     resolution: {integrity: sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w==}
 
-  '@erwanjugand/prettier-config@1.0.0':
-    resolution: {integrity: sha512-VwVnYI69GNwx8nlpjxBqvVY/TgTSrmP8TsACO3hrfebAXF++LMjras+UC6anbnhpJOSYntkEPsIc1q9EhBxkHA==}
+  '@erwanjugand/prettier-config@1.0.1':
+    resolution: {integrity: sha512-DsnapfXIyig6ZflotcyhQ/bD4vd98fgYdUiXzSKsOcrOoIJ/aPBUjE84y0nGKAlK8kGxVbaEs1mBAJU61YnT5w==}
     peerDependencies:
       prettier: ^3.0.0
+
+  '@erwanjugand/stylelint-config@1.0.1':
+    resolution: {integrity: sha512-O6eTrXs/Gb7QR62KshrtyhKPvMA6+K12XwDuSKSvWFmezkGXaivK1BtnDr/KkdYkdVels7SVn7QlBBfmGvDxvA==}
+    peerDependencies:
+      stylelint: ^17.0.0
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -1431,6 +1427,9 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
+  js-tokens@9.0.1:
+    resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
+
   js-yaml@4.1.1:
     resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
@@ -1777,11 +1776,21 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
+  postcss-html@1.8.1:
+    resolution: {integrity: sha512-OLF6P7qctfAWayOhLpcVnTGqVeJzu2W3WpIYelfz2+JV5oGxfkcEvweN9U4XpeqE0P98dcD9ssusGwlF0TK0uQ==}
+    engines: {node: ^12 || >=14}
+
   postcss-media-query-parser@0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
 
   postcss-resolve-nested-selector@0.1.6:
     resolution: {integrity: sha512-0sglIs9Wmkzbr8lQwEyIzlDOOC9bGmfVKcJTaxv3vMmd3uo4o4DerC3En0bnmgceeql9BfC8hRkp7cg0fjdVqw==}
+
+  postcss-safe-parser@6.0.0:
+    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.3.3
 
   postcss-safe-parser@7.0.1:
     resolution: {integrity: sha512-0AioNCJZ2DPYz5ABT6bddIqlhgwhpHZ/l65YAYo0BCIn0xiDpsnTHz0gnoTGk0OXZW0JRs+cDwL8u/teRdz+8A==}
@@ -2605,7 +2614,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@erwanjugand/prettier-config@1.0.0(prettier@3.8.3)':
+  '@erwanjugand/prettier-config@1.0.1(prettier@3.8.3)':
     dependencies:
       '@trivago/prettier-plugin-sort-imports': 6.0.2(prettier@3.8.3)
       prettier: 3.8.3
@@ -2615,6 +2624,17 @@ snapshots:
       - prettier-plugin-svelte
       - supports-color
       - svelte
+
+  '@erwanjugand/stylelint-config@1.0.1(postcss@8.5.13)(stylelint@17.9.1(typescript@6.0.3))':
+    dependencies:
+      postcss-html: 1.8.1
+      stylelint: 17.9.1(typescript@6.0.3)
+      stylelint-config-recess-order: 7.7.0(stylelint-order@8.1.1(stylelint@17.9.1(typescript@6.0.3)))(stylelint@17.9.1(typescript@6.0.3))
+      stylelint-config-standard-scss: 17.0.0(postcss@8.5.13)(stylelint@17.9.1(typescript@6.0.3))
+      stylelint-order: 8.1.1(stylelint@17.9.1(typescript@6.0.3))
+      stylelint-plugin-use-baseline: 1.4.1(stylelint@17.9.1(typescript@6.0.3))
+    transitivePeerDependencies:
+      - postcss
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -3619,6 +3639,8 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
+  js-tokens@9.0.1: {}
+
   js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
@@ -3972,9 +3994,20 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
+  postcss-html@1.8.1:
+    dependencies:
+      htmlparser2: 8.0.2
+      js-tokens: 9.0.1
+      postcss: 8.5.13
+      postcss-safe-parser: 6.0.0(postcss@8.5.13)
+
   postcss-media-query-parser@0.2.3: {}
 
   postcss-resolve-nested-selector@0.1.6: {}
+
+  postcss-safe-parser@6.0.0(postcss@8.5.13):
+    dependencies:
+      postcss: 8.5.13
 
   postcss-safe-parser@7.0.1(postcss@8.5.13):
     dependencies:
