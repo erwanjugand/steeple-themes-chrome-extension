@@ -23,7 +23,7 @@
     "@prettier/plugin-oxc": "0.1.4",
     "@types/chrome": "0.1.42",
     "@types/node": "24.13.0",
-    "npm-build-zip": "1.0.4",
+    "npm-build-zip": "2.0.0",
     "oxlint": "1.68.0",
     "postcss": "8.5.15",
     "prettier": "3.8.3",
