@@ -4,6 +4,7 @@
     "unicorn/filename-case": ["error", { "cases": { "camelCase": true } }],
     "import/prefer-default-export": "off",
     "import/no-named-export": "off",
+    "eslint/one-var": "off",
     "eslint/no-ternary": "off",
     "eslint/sort-imports": "off",
     "unicorn/switch-case-braces": ["error", "avoid"],
