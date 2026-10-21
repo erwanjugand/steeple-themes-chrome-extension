@@ -30,7 +30,7 @@
     "sass-embedded": "1.105.1",
     "stylelint": "17.16.0",
     "typescript": "6.0.3",
-    "vite": "8.3.2",
+    "vite": "8.3.3",
     "vite-plugin-web-extension": "4.5.1"
   }
 }
