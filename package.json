@@ -22,7 +22,7 @@
     "@erwanjugand/stylelint-config": "2.0.1",
     "@prettier/plugin-oxc": "0.2.3",
     "@types/chrome": "0.3.4",
-    "@types/node": "24.19.1",
+    "@types/node": "26.6.5",
     "npm-build-zip": "2.0.1",
     "oxlint": "1.86.0",
     "postcss": "8.5.28",
